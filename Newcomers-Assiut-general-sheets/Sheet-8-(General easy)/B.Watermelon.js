@@ -23,6 +23,6 @@ function readline() {
 
 function main() {
   let n = parseInt(readline());
+  if (n % 2 === 0 && n > 2) print("YES");
+  else print("NO");
 }
-
-//nodemon --ignore stdin B. test.js   -> run command
