@@ -23,7 +23,22 @@ function readline() {
 
 function main() {
   //************************** First version ****************
+  // let counter = 0;
+  // let [a, b] = readline().split(" ").map(Number);
+  // if (a === b) return print(1);
+  // while (true) {
+  //   a *= 3;
+  //   b *= 2;
+  //   counter++;
+  //   if (a > b) return print(counter);
+  // }
   //************************** Optimized version ****************
+  let counter = 0;
+  let [a, b] = readline().split(" ").map(Number);
+  while (a <= b) {
+    a *= 3;
+    b *= 2;
+    counter++;
+  }
+  print(counter);
 }
-
-//nodemon --ignore stdin test.js   -> run command
